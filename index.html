@@ -5,118 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <title>Portfolio</title>
+    <!-- Bootstrap, FontAwesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggle" 
-                aria-controls="navToggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse justify-content-center" id="navToggle">
-            <ul class="navbar-nav text-center">
-                <li class="nav-item mr-5">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-itemm mr-5">
-                    <a class="nav-link" href="#education">Education</a>
-                </li>
-                <li class="nav-item mr-5">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item mr-5">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mr-5" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    
 
     <!-- Full Screen intro page -->
     <div class="container-fluid">
-        <div class="row background-image justify-content-center">
-            <div class="col-md-4 col-12 intro-margin text-left">
-                <h1>Max Molchanov</h1>
-                <h3 class="mb-4">Software Engineer</h3>
-                <!--
-                <p>
-                    I am third year undergraduate student at University of California, Davis. I am an aspiring Software
-                    Engineer looking for opportunities.
-                </p>
-                -->
-                <p>linkedin.com/maksimmolchanov</p>
-                <p>github.com/MaxMol1</p>
-                <p>mmolchanov@ucdavis.edu</p>
-                <p>650-353-8048</p>
-            </div>
-            <div class="col-md-3 col-12 intro-margin">
+        <div class="row">
+            <div class="col-md-6 col-12 intro-photo text-center">
                 <div class="avatar">
-                    <img src="Headshot.JPG" class="rounded-circle z-depth-1" alt="" height="250px" width="250px">
+                    <img src="Headshot.JPG" class="rounded-headshot" alt="" height="300px" width="300px">
+                    <div>
+                        <a class="icon-link" href="https://www.github.com/MaxMol1"><i class="fa fa-github"></i></a>
+                        <a class="icon-link" href="https://www.linkedin.com/in/maksimmolchanov/"><i class="fa fa-linkedin"></i></a>
+                        <a class="icon-link" href="mailto:mmolchanov@ucdavis.edu?subject=Subject Text"><i class="fa fa-envelope-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 intro-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Max Molchanov</h1>
+                        <p class="mb-4 mt-4">Hello, my name is Max Molchanov. I am an undergradute
+                            computer science and engineering student at the University
+                            of California, Davis. I have a keen interest toward Machine Learning,
+                            Data Science, and algorithms.</p>
+                        <div class="button-container text-center">
+                            <a href="#education"><button type="button" class="btn btn-primary">Education</button></a>
+                            <a href="#projects"><button type="button" class="btn btn-primary">Projects</button></a>
+                            <a href="#"><button type="button" class="btn btn-primary">Experience</button></a>
+                            <a href="#skills"><button type="button" class="btn btn-primary">Skills</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container paddings">
-        <div class="row justify-content-center" id="education">
-            <div class="col-12 text-center">
-                <h1 class="header-padding-s top-padding">Education</h1>
-                <p>B.S. Computer Science and Engineering</p>
-                <p>University of California Davis</p>
-                <p>GPA 3.73</p>
-                <p>Honors Program</p>
-            </div>
-            <div class="col-12 text-center">
-                <h2 class="header-padding-s">Courses</h2>
-            </div>
-            <div class="col-3 text-center">
-                <p>Algorithm Analysis</p>
-                <p>Data Scructures</p>
-                <p>Machine Learning</p>
-                <p>Applied Data Science</p>
-            </div>
-            <div class="col-3 text-center">
-                <p>Operating Systems</p>
-                <p>Computer Architecture</p>
-                <p>Physics</p>
-                <p>Circuits</p>
-            </div>
-            <div class="col-3 text-center">
-                <p>Discrete Mathematics</p>
-                <p>Linear Algebra</p>
-                <p>Differential Equations</p>
-            </div>
-        </div>
-
-        <div class="row" id="skills">
-            <div class="col-12 text-center">
-                <h1 class="header-padding">Skills</h1>
-            </div>
-            <div class="col-12 text-left">
-                <h3 class="pb-1">Front End</h3>
-                <p class="pb-5">
-                    Placeholder text for front end skills...
-                </p>
-                <h3 class="pb-1">Back End</h3>
-                <p class="pb-5">
-                    Placeholder text for back end skills...
-                </p>
-                <h3 class="pb-1">Data Processing</h3>
-                <p>
-                    Placeholder text for data processing skills...
-                </p>
-            </div>
-        </div>
         
+        <!-- Education -->
+        <div class="row" id="education">
+            <!-- Summary -->
+            <div class="col-7 row-col text-center">
+                <h1 class="pt-5 pb-5">Education</h1>
+                <div class="mt-4 text-left" style="margin: 0 auto; width: 450px;">
+                    <h3 class="bold-font">University of California, Davis</h3>
+                    <h3>B.S. Computer Science and Engineering</h3>
+                    <h3 class="mt-4">GPA: 3.73/4.0</h3>
+                    <h3>Honors Program</h3>
+                </div>
+            </div>
+            <!-- Courses -->
+            <div class="col-5 row-col">
+                <div class="left-popout text-white text-center">
+                    <h2 class="pt-5 mb-3">Courses Include</h2>
+                    <hr class="mb-5">
+                    <p>Algorithm Analysis</p>
+                    <p>Data Scructures</p>
+                    <p>Machine Learning</p>
+                    <p>Applied Data Science</p>
+                    <p>Operating Systems</p>
+                    <p>Computer Architecture</p>
+                    <p>Physics</p>
+                    <p>Circuits</p>
+                    <p>Discrete Mathematics</p>
+                    <p>Linear Algebra</p>
+                    <p>Differential Equations</p>
+                </div>
+            </div>
+        </div>
+        <!-- Experience 
         <div class="row" id="experience">
             <div class="col-12 text-center">
                 <h1 class="header-padding">Experience</h1>
@@ -135,37 +100,157 @@
                     Placeholder text for endeavors as a private tutor...    
                 </p>
             </div>
-        </div>
+        </div> -->
+        <!-- Projects -->
+        <div class="text-center" id="projects" style="margin-top: 100px;">
+            <h1 class="mb-5">Projects</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                        <h4 class="text-uppercase m-0">Sigma Chi <br>Website</h4>
+                        <hr class="my-4">
+                        <div class="overlay-container">
+                            <a href="https://sigmachidavis.com/" target="_blank">
+                                <img src="sigmachiproject.jpg" width="250px" height="auto">
+                                <div class="overlay">
+                                    <span>Click Me!</span>
+                                </div>
+                            </a>
+                        </div>
+                        <p class="mt-3">Website for the Theta Omicron Chapter of Sigma Chi developed with HTML, CSS, and
+                            Javascript.
+                        </p>
+                        <a href="https://github.com/MaxMol1/davis-sigma-chi" target="_blank"><p class="mt-3">GitHub</p></a>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <h4 class="text-uppercase m-0">Customer Classification</h4>
+                            <hr class="my-4">
+                            <div class="overlay-container">
+                                <a href="https://ecs171-team11.herokuapp.com/" target="_blank">
+                                    <img src="download.jpg" width="250px" height="auto">
+                                    <div class="overlay">
+                                        <span>Click Me!</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="mt-3">
+                                Multiple machine learning models predicting whether customers will buy a product based on
+                                observed qualities.
+                            </p>
+                            <a href="https://github.com/martingul/ECS171-Team11" target="_blank"><p class="mt-3">GitHub</p></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <h4 class="text-uppercase m-0">Pouch Finance <br>Tracker</h4>
+                            <hr class="my-4">
+                            <img src="finance.jpg" width="250px" height="auto">
+                            <p class="mt-3">
+                                Finance tracker to track user's spending on a daily, weekly, and monthly basis.
+                            </p>
+                            <a target="_blank"><p class="mt-3">TODO: GitHub</p></a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="row" id="projects">
-            <div class="col-12 text-center">
-                <h1 class="header-padding">Projects</h1>
+              </div>
+              <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <h4 class="text-uppercase m-0">Sound Reactive LED Strip</h4>
+                            <hr class="my-4">
+                            <img src="led.jpg" width="250px" height="auto">
+                            <p class="mt-3">
+                                Sound reactive LED strip with lyric fetching API and NLP color Classification.
+                            </p>
+                            <a target="_blank"><p class="mt-3">TODO: GitHub</p></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <h4 class="text-uppercase m-0">Wood <br> Classificaton</h4>
+                            <hr class="my-4">
+                            <img src="wood.jpg" width="250px" height="auto">
+                            <p class="mt-3">
+                                Class project to detect vessel elements in wood and cluster observations
+                            </p>
+                            <a target="_blank"><p class="mt-3">TODO: GitHub</p></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">
+                        <div class="card-body text-center">
+                            <h4 class="text-uppercase m-0">Bit Project <br>Curriculum</h4>
+                            <hr class="my-4">
+                            <img src="bit.jpg" width="250px" height="auto">
+                            <p class="mt-3">
+                                Student developed curriculum for underrepresented grade schools in the Sacramento area.
+                            </p>
+                            <a href="https://github.com/bitprj" target="_blank"><p class="mt-3">GitHub</p></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class="col-12 text-left">
-                <h3 class="pb-1">Sigma Chi Website</h3>
-                <p class="pb-5">
-                    I made a website for my fraternity that gained a lot of traction and popularity. It allowed my fraternity
-                    to not only gauge recruitment interest, but also to use as an advertising platform of what our
-                    fraternity is, what our ideals stand for, who we are, and what we do. 
-                </p>
-                <!-- Absolutely include the link -->
-                <h3 class="pb-1">Pouch</h3>
-                <p class="pb-5">
-                    Placeholder text...
-                </p>
-                <!-- Absolutely include the link -->
-                <h3 class="pb-1">Wood Classification</h3>
-                <p class="pb-5">
-                    placeholder text...
-                </p>
-                <h3 class="pb-1">LED Strip</h3>
-                <p class="pb-5">
-                    I began experimenting with IoT....
-                </p>
-                <h3 class="pb-1">Bit Project</h3>
-                <p class="pb-5">
-                    Community service and volunteering...
-                </p>
+        </div>
+        <!-- Skills -->
+        <div class="text-center" id="skills" style="margin-top: 100px;">
+            <h1 class="mb-5">Skills</h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                      <h4 class="text-uppercase m-0">Front End</h4>
+                      <hr class="my-4">
+                      <p>HTML/CSS</p>
+                      <p>Bootstrap</p>
+                      <p>Vue.js</p>
+                      <p>D3.js</p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                      <h4 class="text-uppercase m-0">Back End</h4>
+                      <hr class="my-4">
+                      <p>Node.js</p>
+                      <p>Express</p>
+                      <p>Docker</p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                      <h4 class="text-uppercase m-0">Data Science</h4>
+                      <hr class="my-4">
+                      <p>Pandas</p>
+                      <p>Numpy</p>
+                      <p>Sci-kit learn</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>
