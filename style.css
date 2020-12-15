@@ -154,11 +154,6 @@ hr {
 
 /* Other */
 
-.header-padding {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
 .header-padding-s {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -166,6 +161,10 @@ hr {
 
 .top-padding {
     padding-top: 100px;
+}
+
+.bottom-padding {
+    padding-bottom: 100px;
 }
 
 .side-padding-l {
