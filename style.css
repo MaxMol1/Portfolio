@@ -27,6 +27,7 @@ hr {
     background-color: #242582;
     border: none;
     margin: 0 7px 0 7px;
+    width: 150px;
 }
 
 .btn-primary:hover {
@@ -53,10 +54,6 @@ hr {
     font-weight: 900;
 }
 
-.card {
-    border: none;
-}
-
 /* Landing Page */
 
 .intro-photo {
@@ -72,9 +69,13 @@ hr {
 }
 
 .intro-card .card {
-    width: 75%;
+    width: 400px;
     margin: 0 auto;
     border-radius: 5%;
+}
+
+.card {
+    border: none;
 }
 
 .rounded-headshot {
@@ -83,7 +84,7 @@ hr {
 }
 
 .button-container {
-    margin-top: 130px;
+    margin-top: 80px;
 }
 
 /* Education */
@@ -101,6 +102,13 @@ hr {
 
 .left-padding {
     padding-left: 50px;
+}
+
+/* Experience */
+
+.experience-container {
+    width: 800px;
+    margin: 0 auto;
 }
 
 /* Projects */
