@@ -182,3 +182,21 @@ hr {
 .paddings {
     padding: 0 100px;
 }
+
+@media only screen and (max-width: 800px) {
+    .intro-photo {
+        height: 65vh;
+    }
+
+    .intro-card {
+        height: 60vh;
+    }
+    
+    .experience-container {
+      width: 400px;
+    }
+
+    .left-popout {
+        margin-left: 150px;
+    }
+  }
