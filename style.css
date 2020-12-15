@@ -141,6 +141,11 @@ hr {
     color:#fff;
 }
 
+.project-description {
+    margin: 0 auto;
+    width: 300px;
+}
+
 /* Skills */
 
 .inner-padding {
