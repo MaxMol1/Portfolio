@@ -50,10 +50,6 @@ hr {
     color: gold;
 }
 
-.bold-font {
-    font-weight: 900;
-}
-
 /* Landing Page */
 
 .intro-photo {
@@ -89,20 +85,7 @@ hr {
 
 /* Education */
 
-.row-col {
-    margin-top: 100px;
-    padding: 0 0;
-}
 
-.left-popout {
-    border-radius: 30px 0px 0px 30px;
-    height: 500px; 
-    background-color: #242582;
-}
-
-.left-padding {
-    padding-left: 50px;
-}
 
 /* Experience */
 
@@ -148,16 +131,9 @@ hr {
 
 /* Skills */
 
-.inner-padding {
-    padding: 0 40px;
-}
+
 
 /* Other */
-
-.header-padding-s {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
 
 .top-padding {
     padding-top: 100px;
@@ -165,22 +141,6 @@ hr {
 
 .bottom-padding {
     padding-bottom: 100px;
-}
-
-.side-padding-l {
-    padding-left: 150px;
-}
-
-.side-padding-r {
-    padding-right: 150px;
-}
-
-.background-image {
-    background-image: linear-gradient(to top left, #2bc8fc, #fbadab);
-}
-
-.paddings {
-    padding: 0 100px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -195,8 +155,4 @@ hr {
     .experience-container {
       width: 400px;
     }
-
-    .left-popout {
-        margin-left: 150px;
-    }
-  }
+}
