@@ -1,9 +1,15 @@
 /* Global CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     padding: 0 0;
     margin: 0 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
 }
 
 h1 {
@@ -12,6 +18,7 @@ h1 {
 
 h3 {
     font-size: 25px;
+    font-weight: 400;
 }
 
 p {
@@ -50,12 +57,31 @@ hr {
     color: gold;
 }
 
+strong {
+    font-weight: 500;
+}
+
 /* Landing Page */
 
 .intro-photo {
-    background-color: #242582;
+    /* background-color: #242582; */
     padding-top: calc(10%);
     height: 100vh;
+    background: linear-gradient(45deg, #020024, #090979, #0473bf, #00d4ff);
+    background-size: 400% 400%;
+    animation: gradient 13s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .intro-card {
