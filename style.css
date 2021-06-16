@@ -193,12 +193,26 @@ strong {
 /* Media Rules */
 
 @media only screen and (max-width: 800px) {    
+    h1 {
+        font-size: 40px;
+    }
+    
     .intro-photo {
         height: 65vh;
     }
 
     .intro-card {
-        height: 60vh;
+        height: 70vh;
+    }
+
+    .intro-card .card {
+        width: 350px;
+        margin: 0 auto;
+        border-radius: 5%;
+    }
+
+    .btn-primary {
+        width: 120px;
     }
 
     .courses {
@@ -210,7 +224,7 @@ strong {
     }
     
     .experience-container {
-      width: 400px;
+      width: 300px;
     }
 
     .led-padding {
