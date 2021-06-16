@@ -42,7 +42,13 @@ hr {
     color: black;
 }
 
-.fa {
+strong {
+    font-weight: 500;
+}
+
+/* Landing Page */
+
+.intro-icon {
     font-size: 40px;
     width: 75px;
     margin-top: 50px;
@@ -56,12 +62,6 @@ hr {
 .icon-link:hover {
     color: gold;
 }
-
-strong {
-    font-weight: 500;
-}
-
-/* Landing Page */
 
 .intro-photo {
     /* background-color: #242582; */
@@ -106,12 +106,36 @@ strong {
 }
 
 .button-container {
-    margin-top: 80px;
+    margin-top: 60px;
+}
+
+/* Sections Global */
+
+.title-icon {
+    color: black;
+    font-size: 30px;
+    vertical-align: middle;
+    padding: 0px 0px 3px 4px;
+}
+
+.top-padding {
+    padding-top: 100px;
+}
+
+.bottom-padding {
+    padding-bottom: 100px;
+}
+
+.no-vertical-padding {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 /* Education */
 
-
+.courses {
+    text-align: left;
+}
 
 /* Experience */
 
@@ -139,7 +163,7 @@ strong {
 }
 
 .overlay-container:hover .overlay{
-    opacity: .7;
+    opacity: .8;
 }
 
 .overlay span {
@@ -150,32 +174,27 @@ strong {
     color:#fff;
 }
 
-.project-description {
-    margin: 0 auto;
-    width: 300px;
-}
-
 /* Skills */
 
 
 
-/* Other */
+/* Media Rules */
 
-.top-padding {
-    padding-top: 100px;
-}
-
-.bottom-padding {
-    padding-bottom: 100px;
-}
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {    
     .intro-photo {
         height: 65vh;
     }
 
     .intro-card {
         height: 60vh;
+    }
+
+    .courses {
+        text-align: center;
+    }
+
+    ul {
+        padding-left: 15px;
     }
     
     .experience-container {

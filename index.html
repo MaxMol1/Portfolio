@@ -7,8 +7,9 @@
     <title>Max's Portfolio</title>
     <!-- Bootstrap, FontAwesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -17,16 +18,17 @@
 </head>
 <body>
 
-    <!-- Full Screen intro page -->
+    <!-- ~~~~~~~~~~~~~~ Intro Page ~~~~~~~~~~~~~~ -->
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 col-12 intro-photo text-center">
                 <div class="avatar">
-                    <img src="Headshot.JPG" class="rounded-headshot" alt="" height="300px" width="300px">
+                    <img src="img/Headshot.jpg" class="rounded-headshot" alt="" height="300px" width="300px">
                     <div>
-                        <a class="icon-link" href="https://www.github.com/MaxMol1" target="_blank"><i class="fa fa-github"></i></a>
-                        <a class="icon-link" href="https://www.linkedin.com/in/maksimmolchanov/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        <a class="icon-link" href="mailto:mmolchanov@ucdavis.edu?subject=Subject Text"><i class="fa fa-envelope-square"></i></a>
+                        <a class="icon-link" href="https://www.github.com/MaxMol1" target="_blank"><i class="intro-icon fab fa-github"></i></a>
+                        <a class="icon-link" href="https://www.linkedin.com/in/maksimmolchanov/" target="_blank"><i class="intro-icon fab fa-linkedin"></i></a>
+                        <a class="icon-link" href="mailto:mmolchanov@ucdavis.edu?subject=Subject Text"><i class="intro-icon fa fa-envelope-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -35,9 +37,11 @@
                     <div class="card-body">
                         <h1>Max Molchanov</h1>
                         <p class="mb-4 mt-4">Hello, my name is Max Molchanov. I am an undergraduate
-                            computer science and engineering student at the University
-                            of California, Davis. I have a keen interest toward Machine Learning,
-                            Data Science, and algorithms.</p>
+                            student at the University of California, Davis majoring in Computer Science
+                            and Engineering. I have a keen interest toward system programming, IoT
+                            and machine learning, and am looking to start my software development career
+                            when I graduate in June 2022.
+                        </p>
                         <div class="button-container text-center">
                             <a href="#education"><button type="button" class="mb-2 btn btn-primary">Education</button></a>
                             <a href="#experience"><button type="button" class="mb-2 btn btn-primary">Experience</button></a>
@@ -48,80 +52,81 @@
                 </div>
             </div>
         </div>
+    </div>
         
-        <!-- Education Intro -->
-        <div class="text-center" id="education">
-            <h1 class="top-padding bottom-padding">Education</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <div class="text-center">
-                            <h3>University of California, Davis</h3>
-                            <p class="mb-4">B.S. Computer Science and Engineering</p>
-                            <p>University Honors Program</p>
-                            <p>GPA: 3.80/4.0</p>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-6 col-12 top-padding">
-                        <div class="text-center">
-                            <h4 class="text-uppercase m-0">Courses</h4>
-                            <hr class="my-4">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3 mb-md-0">
-                                        <div class="card h-100">
-                                            <div class="card-body" style="padding-top: 0px; padding-bottom: 0px;">
-                                            <p>Algorithm Analysis</p>
-                                            <p>Data Structures</p>
-                                            <p>Theory of Computation</p>
-                                            <p>Discrete Mathematics</p>
-                                            <p>Programming Languages</p>
-                                            <p>Machine Learning</p>
-                                            <p>Artificial Intelligence</p>
-                                            <p>Applied Data Science</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-3 mb-md-0">
-                                        <div class="card h-100">
-                                            <div class="card-body" style="padding-top: 0px; padding-bottom: 0px;">
-                                                <p>Operating Systems</p>
-                                                <p>Parallel Programming</p>
-                                                <p>Computer Architecture</p>
-                                                <p>Computer Networks</p>
-                                                <p>Circuits Analysis</p>
-                                                <p>Differential Equations</p>
-                                                <p>Linear Algebra</p>
-                                                <p>Modern Physics</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <!-- ~~~~~~~~~~~~~~ Main Page Content ~~~~~~~~~~~~~~ -->
+
+    <div class="container">
+        <!-- Education -->
+        <div class="row" id="education">
+            <!-- title -->
+            <div class="col-12 text-center top-padding bottom-padding">
+                <h1>Education <i class="title-icon fas fa-school"></i></h1>
+            </div>
+            <!-- summary -->
+            <div class="col-12 text-center">
+                <div class="text-center">
+                    <h3>University of California, Davis</h3>
+                    <p class="mb-4">B.S. Computer Science and Engineering</p>
+                    <p>University Honors Program</p>
+                    <p>GPA: 3.80/4.0</p>
+                </div>
+            </div>
+            <!-- courses -->
+            <div class="col-md-6 col-12 top-padding">
+                <h4 class="text-uppercase text-center m-0">Courses</h4>
+                <hr class="my-4">
+                <div class="row courses">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <div class="card h-100">
+                            <div class="card-body no-vertical-padding">
+                                <ul>
+                                    <li><p>Algorithm Analysis</p></li>
+                                    <li><p>Data Structures</p></li>
+                                    <li><p>Theory of Computation</p></li>
+                                    <li><p>Discrete Mathematics</p></li>
+                                    <li><p>Programming Languages</p></li>
+                                    <li><p>Machine Learning</p></li>
+                                    <li><p>Artificial Intelligence</p></li>
+                                    <li><p>Applied Data Science</p></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 top-padding">
-                        <div class="text-center">
-                            <h4 class="text-uppercase m-0">Awards</h4>
-                            <hr class="my-4">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12 mb-3 mb-md-0">
-                                        <div class="card h-100">
-                                            <div class="card-body text-left" style="padding-top: 0px; padding-bottom: 0px;">
-                                                <p><strong>Dean's Honor List</strong> - Quarterly award given to the top 16% 
-                                                    of students by grade point average in the same college and class level
-                                                </p>
-                                                <p><strong>Chevron Scholar Award</strong> - One of two students in the Computer Science and Engineering major
-                                                    selected by the UC Davis College of Engineering to receive this award
-                                                </p>
-                                                <p><strong>2019 Big West Commissioner's Highest Honor Roll</strong> - Big West Conference athletic scholar recognition award</p>
-                                                <p><strong>2020 Big West Commissioner's Highest Honor Roll</strong> - Big West Conference athletic scholar recognition award</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <div class="card h-100">
+                            <div class="card-body no-vertical-padding">
+                                <ul>
+                                    <li><p>Operating Systems</p></li>
+                                    <li><p>Parallel Programming</p></li>
+                                    <li><p>Computer Architecture</p></li>
+                                    <li><p>Computer Networks</p></li>
+                                    <li><p>Circuits Analysis</p></li>
+                                    <li><p>Differential Equations</p></li>
+                                    <li><p>Linear Algebra</p></li>
+                                    <li><p>Modern Physics</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- awards -->
+            <div class="col-md-6 col-12 top-padding">
+                <h4 class="text-uppercase text-center m-0">Awards</h4>
+                <hr class="my-4">
+                <div class="row text-left">
+                    <div class="col-md-12 mb-3 mb-md-0">
+                        <div class="card h-100">
+                            <div class="card-body no-vertical-padding">
+                                <p><strong>Dean's Honor List</strong> - Quarterly award given to the top 16% 
+                                    of students by grade point average in the same college and class level
+                                </p>
+                                <p><strong>Chevron Scholar Award</strong> - One of two students in the Computer Science and Engineering major
+                                    selected by the UC Davis College of Engineering to receive this award
+                                </p>
+                                <p><strong>2019 Big West Commissioner's Highest Honor Roll</strong> - Big West Conference athletic scholar recognition award</p>
+                                <p><strong>2020 Big West Commissioner's Highest Honor Roll</strong> - Big West Conference athletic scholar recognition award</p>
                             </div>
                         </div>
                     </div>
@@ -130,8 +135,12 @@
         </div>
 
         <!-- Experience -->
-        <div class="text-center" id="experience">
-            <h1 class="top-padding bottom-padding">Experience</h1>
+        <div class="row" id="experience">
+            <!-- title -->
+            <div class="col-12 text-center top-padding bottom-padding">
+                <h1>Experience <i class="title-icon fas fa-laptop-code"></i></h1>
+            </div>
+            <!-- title -->
             <div class="container text-left">
                 <div class="row">
                     <div class="col-12">
@@ -144,7 +153,7 @@
                             </p>
                             <h2 class="pb-1">Data Processing Specialist</h2>
                             <h4 class="pb-1">UC Davis Genome Center</h4>
-                            <p class="pb-1">June 2020 - Present</p>
+                            <p class="pb-1">June 2020 - December 2020</p>
                             <p class="pb-5">
                                 I interned at <a href="https://predictioncenter.org/" target="_blank">CASP</a> 
                                 (Critical Assessment of Techniques for Protein Structure Prediction) as a data processing assistant
@@ -154,31 +163,32 @@
                                 solution that rivals the accuracy of laboratory measurements.
                                 <br><br>
                                 I helped migrate the computationally heavy parts of the CASP14 project to a more powerful Linux Machine 
-                                and a distributed system, while creating numerous Shell scripts to automate processing protein structure 
-                                and output files. I debugged old Perl scripts and tested the reliability of key data processing pipelines
+                                and a distributed system, while creating numerous Shell scripts to automate processing protein structures 
+                                and logging files. I debugged older Perl scripts and tested the reliability of key data processing pipelines
                                 while I ran structural assessments of target structures and their predictions.
                                 <br><br>
                                 I also got the opportunity to create visualizations with Python to analyze the accuracy of predictions,
                                 as well as to create new methods to assess those predictions based on various criteria. In the beginning
-                                of 2021, I am hoping to move to a team focusing on developing and refining
-                                deep learning prediction methods to solve this extraordinary puzzle.
+                                of 2021, I am hoping to move to a team focusing on developing and refining deep learning prediction methods
+                                to solve this extraordinary puzzle.
                             </p>
                             <h2 class="pb-1">Software Engineer Intern</h2>
                             <h4 class="pb-1">AltoPass, Inc.</h4>
                             <p class="pb-1">May 2020 - November 2020</p>
                             <p class="pb-5">
-                                I worked with a small start-up to improve the search engine of their password manager app by gathering
+                                I worked with a start-up to improve the search engine of the AltoPass password manager app by gathering
                                 services, processing them, and ranking them using several data heuristics. I was able to work with
                                 Elastic Search and learned how to apply my skills to work with big data. The app recently went live on
                                 Google Play Store and App Store.
                             </p>
                             <h2 class="pb-1">Private Tutor</h2>
                             <h4 class="pb-1">Self Employed</h4>
-                            <p class="pb-1">February 2017 - June 2020</p>
+                            <p class="pb-1">February 2017 - May 2021</p>
                             <p>
-                                I helped kids ages 12-18 in computer science and mathematics as private tutor. I created lesson plans
-                                and worked with the kids in areas where the struggled in school to reinforce content they were learning,
-                                as well as helped them get ahead and improve their understanding in whichever way they were interested in.
+                                I offer help to kids ages 12-18 in mathematics and computer science as a private tutor. I create lesson plans
+                                and work with the kids in areas where they struggle in school to reinforce the content they are learning,
+                                as well as help them get ahead and improve their understanding and mastery of content. I also provide tutoring
+                                for AP exams around April/May each year.
                             </p>
                         </div>
                     </div>
@@ -187,127 +197,112 @@
         </div>
 
         <!-- Projects -->
-        <div class="text-center" id="projects">
-            <h1 class="top-padding bottom-padding">Projects</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card h-100">
-                            <div class="card-body" style="padding-top: 0px;">
-                                <h4 class="text-uppercase m-0">Sigma Chi <br>Website</h4>
-                                <hr class="my-4">
-                                <div class="overlay-container">
-                                    <a href="https://sigmachidavis.com/" target="_blank">
-                                        <img src="sigmachiproject.jpg" width="auto" height="170px">
-                                        <div class="overlay">
-                                            <span>Click Me!</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="project-description">
-                                    <p class="project-description mt-3">
-                                        I developed the current website for the Theta Omicron Chapter of Sigma Chi at UC Davis
-                                        using HTML, CSS, and JavaScript.
-                                    </p>
-                                </div>
+        <div class="row" id="projects">
+            <!-- title -->
+            <div class="col-12 text-center top-padding bottom-padding">
+                <h1>Projects <i class="title-icon fas fa-project-diagram"></i></h1>
+            </div>
+            <!-- First Row -->
+            <div class="row text-center">
+                <!-- Sigma Chi Website -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100">
+                        <div class="card-body no-vertical-padding">
+                            <h4 class="text-uppercase m-0">Sigma Chi <br>Website</h4>
+                            <hr class="my-4">
+                            <div class="overlay-container">
+                                <a href="https://sigmachidavis.com/" target="_blank">
+                                    <img src="img/sigmachiproject.jpg" width="auto" height="150px">
+                                    <div class="overlay"><span>Click Me!</span></div>
+                                </a>
                             </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card h-100">
-                            <div class="card-body" style="padding-top: 0px;">
-                                <h4 class="text-uppercase m-0">Customer Classification</h4>
-                                <hr class="my-4">
-                                <div class="overlay-container">
-                                    <a href="https://ecs171-team11.herokuapp.com/" target="_blank">
-                                        <img src="customer.jpg" width="auto" height="170px">
-                                        <div class="overlay">
-                                            <span>Click Me!</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="project-description">
-                                    <p class="mt-3">
-                                        This is a ten person machine learning project where my team built three models using
-                                        sci-kit learn and Keras to predict customer shopping habits based on a public database.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card h-100">
-                            <div class="card-body" style="padding-top: 0px;">
-                                <h4 class="text-uppercase m-0">Pouch Finance <br>Tracker</h4>
-                                <hr class="my-4">
-                                <div class="overlay-container">
-                                    <a href="https://pouch.cash" target="_blank">
-                                        <img src="pouch.jpg" width="auto" height="170px">
-                                        <div class="overlay">
-                                            <span>Click Me!</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="project-description">
-                                    <p class="mt-3">
-                                        Pouch is a finance tracker application that reports the user's spending on a 
-                                        across multiple bank accounts on a daily basis.
-                                        <br>
-                                        <strong>Contact for limited access</strong>
-                                    </p>
-                                </div>
-                            </div>
+                            <p class="mt-3">
+                                I developed the current website for the Theta Omicron Chapter of Sigma Chi at UC Davis
+                                using HTML, CSS, and JavaScript.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 mt-4 mb-3 mb-md-0">
-                        <div class="card h-100">
-                            <div class="card-body" style="padding-bottom: 0px;">
-                                <h4 class="text-uppercase m-0">Sound Reactive LED Strip</h4>
-                                <hr class="my-4">
-                                <div class="overlay-container">
-                                    <a href="https://github.com/MaxMol1/Sound-Reactive-LED" target="_blank">
-                                        <img src="led.jpg" width="auto" height="170px">
-                                        <div class="overlay">
-                                            <span>Click Me!</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="project-description">
-                                    <p class="mt-3">
-                                        This is a multistage project aiming to create a framework for sound
-                                        reactive lights using an ESP8266 microcontroller. It includes a lyric fetching API
-                                        and lyrical analysis to choose colors based off sentiment.
-                                    </p>
-                                </div>
+                <!-- Customer Classification -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100">
+                        <div class="card-body" style="padding-top: 0px;">
+                            <h4 class="text-uppercase m-0">Customer <br>Classification</h4>
+                            <hr class="my-4">
+                            <div class="overlay-container">
+                                <a href="https://ecs171-team11.herokuapp.com/" target="_blank">
+                                    <img src="img/customer.jpg" width="auto" height="150px">
+                                    <div class="overlay"><span>Click Me!</span></div>
+                                </a>
                             </div>
+                            <p class="mt-3">
+                                This is a ten person machine learning project where my team built three models using
+                                sci-kit learn and Keras to predict customer shopping habits based on a public database.
+                            </p>
                         </div>
                     </div>
-    
-                    <div class="col-md-6 mt-4 mb-3 mb-md-0">
-                        <div class="card h-100">
-                            <div class="card-body text-center" style="padding-bottom: 0px;">
-                                <h4 class="text-uppercase m-0">Bit Project Curriculum</h4>
-                                <hr class="my-4">
-                                <div class="overlay-container">
-                                    <a href="https://www.bitproject.org/" target="_blank">
-                                        <img src="bitproject.jpg" width="auto" height="170px">
-                                        <div class="overlay">
-                                            <span>Click Me!</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="project-description">
-                                    <p class="mt-3">
-                                        I created numerous computer science activities and lessons as part of a 
-                                        student run club at UC Davis called Bit Project aiming to create a STEM 
-                                        curriculum for underrepresented grade schools in the Sacramento area.
-                                    </p>
-                                </div>
+                </div>
+                <!-- Pouch -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100">
+                        <div class="card-body" style="padding-top: 0px;">
+                            <h4 class="text-uppercase m-0">Pouch Finance <br>Tracker</h4>
+                            <hr class="my-4">
+                            <div class="overlay-container">
+                                <a href="https://pouch.cash" target="_blank">
+                                    <img src="img/pouch.jpg" width="auto" height="150px">
+                                    <div class="overlay"><span>Click Me!</span></div>
+                                </a>
                             </div>
+                            <p class="mt-3">
+                                Pouch is a finance tracker application that reports the user's spending on a 
+                                across multiple bank accounts on a daily basis.
+                                <br>
+                                <strong>Contact for limited access</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Row -->
+            <div class="row text-center">
+                <!-- Sound Reactive LED Strip -->
+                <div class="col-md-6 mt-4 mb-3 mb-md-0">
+                    <div class="card h-100">
+                        <div class="card-body" style="padding-bottom: 0px;">
+                            <h4 class="text-uppercase m-0">Sound Reactive <br>LED Strip</h4>
+                            <hr class="my-4">
+                            <div class="overlay-container">
+                                <a href="https://github.com/MaxMol1/Sound-Reactive-LED" target="_blank">
+                                    <img src="img/led.jpg" width="auto" height="150px">
+                                    <div class="overlay"><span>Click Me!</span></div>
+                                </a>
+                            </div>
+                            <p class="mt-3">
+                                This is a multistage project aiming to create a framework for sound
+                                reactive lights using an ESP8266 microcontroller. It includes a lyric fetching API
+                                and lyrical analysis to choose colors based off sentiment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bit Project -->
+                <div class="col-md-6 mt-4 mb-3 mb-md-0">
+                    <div class="card h-100">
+                        <div class="card-body text-center" style="padding-bottom: 0px;">
+                            <h4 class="text-uppercase m-0">Bit Project <br>Curriculum</h4>
+                            <hr class="my-4">
+                            <div class="overlay-container">
+                                <a href="https://www.bitproject.org/" target="_blank">
+                                    <img src="img/bitproject.jpg" width="auto" height="150px">
+                                    <div class="overlay"><span>Click Me!</span></div>
+                                </a>
+                            </div>
+                            <p class="mt-3">
+                                I created numerous computer science activities and lessons as part of a 
+                                student run club at UC Davis called Bit Project aiming to create a STEM 
+                                curriculum for underrepresented grade schools in the Sacramento area.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -315,51 +310,52 @@
         </div>
 
         <!-- Skills -->
-        <div class="text-center mb-5" id="skills">
-            <h1 class="top-padding bottom-padding">Skills</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card h-100">
-                            <div class="card-body" style="padding-top: 0px;">
-                                <h4 class="text-uppercase m-0">Languages</h4>
-                                <hr class="my-4">
-                                <p>Python</p>
-                                <p>TypeScript</p>
-                                <p>HTML/CSS</p>
-                                <p>C</p>
-                                <p>C++</p>
-                                <p>Shell</p>  
-                            </div>
-                        </div>
+        <div class="row mb-5 text-center" id="skills">
+            <!-- title -->
+            <div class="col-12 text-center top-padding bottom-padding">
+                <h1>Skills <i class="title-icon fas fa-cogs"></i></h1>
+            </div>
+            <!-- languages -->
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card h-100">
+                    <div class="card-body" style="padding-top: 0px;">
+                        <h4 class="text-uppercase m-0">Languages</h4>
+                        <hr class="my-4">
+                        <p>Python</p>
+                        <p>C</p>
+                        <p>C++</p>
+                        <p>Go</p>
+                        <p>TypeScript</p>
+                        <p>HTML/CSS</p>
+                        <p>Bash</p>
                     </div>
-        
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card h-100">
-                            <div class="card-body" style="padding-top: 0px;">
-                                <h4 class="text-uppercase m-0">Tools</h4>
-                                <hr class="my-4">
-                                <p>Git</p>
-                                <p>Node.js</p>
-                                <p>Bootstrap</p>
-                                <p>Vue.js</p>
-                                <p>Pandas</p>
-                                <p>Sci-kit learn</p>
-                                <p>Keras</p>
-                                <p>Docker</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <!-- tools -->
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card h-100">
+                    <div class="card-body" style="padding-top: 0px;">
+                        <h4 class="text-uppercase m-0">Tools</h4>
+                        <hr class="my-4">
+                        <p>Git</p>
+                        <p>Node.js</p>
+                        <p>Bootstrap</p>
+                        <p>Vue.js</p>
+                        <p>Pandas</p>
+                        <p>Sci-kit learn</p>
+                        <p>Keras</p>
+                        <p>Docker</p>
                     </div>
-        
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card h-100">
-                            <div class="card-body" style="padding-top: 0px;">
-                                <h4 class="text-uppercase m-0">Databases</h4>
-                                <hr class="my-4">
-                                <p>MongoDB</p>
-                                <p>PostgreSQL</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <!-- databases -->
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card h-100">
+                    <div class="card-body" style="padding-top: 0px;">
+                        <h4 class="text-uppercase m-0">Databases</h4>
+                        <hr class="my-4">
+                        <p>MongoDB</p>
+                        <p>PostgreSQL</p>
                     </div>
                 </div>
             </div>
